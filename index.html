@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riddy Pizza</title>
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/69651d44d1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section id="Home" class="header">
+      <header class="nav">
+	      <a class="logo" href="#Home">Riddy Pizza</a>
+	      <ul>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Order">Order</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </header>
+      <div class="welcome">
+        <h6><i>Riddy Pizza</i></h6>
+        <h5>WORLD OF UNPARALLELED FLAVOURS</h5>
+        <h1>PIZZA</h1>
+        <a class="order" href="#Order">ORDER NOW</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="Menu">
+        <h2>MENU</h2>
+        <div class="wrapper">
+          <div class="works">
+            <img src="./images/all_meat.png" alt="All meat pizza image" />
+            <p>ALL MEAT</p>
+          </div>
+          <div class="works">
+            <img src="./images/veggie.png" alt="Vegetable pizza" />
+            <p>VEGGIE</p>
+          </div>
+          <div class="works">
+            <img src="./images/deluxe.png" alt="Deluxe pizza" />
+            <p>DELUXE</p>
+          </div>
+          <div class="works">
+            <img src="./images/creamy-garlic.png" alt="Creamy Garlic Garden" />
+            <p>CREAMY GARLIC GARDEN</p>
+          </div>
+          <div class="works">
+            <img src="./images/egg-ceptional.png" alt="Egg-ceptional pizza" />
+            <p>EGG-CEPTIONAL</p>
+	    </div>
+          <div class="works">
+            <img src="./images/bbq.png" alt="BBQ chicken pizza" />
+            <p>BBQ CHICKEN</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Order">
+        <h3>PLACE YOUR ORDER</h3>
+        <div class="order">
+          <p>What will you have today?</p>
+          <select class="form-select form-select-sm mb-3 flavor" aria-label=".form-select-lg example">
+            <option value="Deluxe">Deluxe</option>
+            <option value="All Meat">All Meat</option>
+            <option value="Veggie">Veggie</option>
+            <option value="Egg-ceptional">Egg-ceptional</option>
+            <option value="BBQ chicken">BBQ chicken</option>
+            <option value="Creamy garlic garden">Creamy garlic garden</option>
+	    </select>
+          <p>Select your preferred size:</p>
+          <select class="form-select form-select-sm mb-3 size" aria-label=".form-select-lg example">
+            <option value="900">Medium</option>
+            <option value="1200">Large</option>
+            <option value="650">Small</option>
+          </select>
+          <p>How do you love your CRUST</p>
+          <select class="form-select form-select-sm mb-3 crust" aria-label=".form-select-lg example">
+            <option value="200">Crispy</option>
+            <option value="500">Stuffed</option>
+            <option value="150">Gluten free</option>
+            <option value="350">Flat Bread</option>
+          </select>
+          <p>Explore our Toppings</p>
+          <select class="form-select form-select-sm mb-3 toppings" aria-label=".form-select-lg example">
+            <option value="100">Black Olives</option>
+            <option value="100">Pepperoni</option>
+            <option value="50">Mushrooms</option>
+            <option value="50">Pineapple</option>
+            <option value="100">Extra Cheese</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-info order" type="submit">Order</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Order No.</th>
+              <th scope="col">Flavour</th>
+              <th scope="col">Pizza Size</th>
+              <th scope="col">Toppings</th>
+              <th scope="col">Crust</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="pizza">
+            <tr>
+              <th scope="row">1</th>
+              <td id="flavor"></td>
+              <td id="size"></td>
+              <td id="toppings"></td>
+              <td id="crust"></td>
+              <td id="total"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="additional-buttons">
+          <div class="text-center">
+            <button class="btn btn-info add-pizza" type="submit">Add Another</button>
+            <br />
+            <div class="additional-info">
+              <h3>The total is: <span></span></h3>
+              <h6>Would you like home delivery for an additional <em>250</em>?</h6>
+              <h5>Your order has been received! We are dispatching our rider to <span></span></h5>
+              <div class="location text-center">
+                <input type="text" size="30" placeholder="Where do you live?" required />
+                <button class="btn btn-info complete" type="submit">Complete</button>
+              </div>
+            </div>
+            <br />
+            <button class="btn btn-info yes" type="submit">Yes</button>
+            <button class="btn btn-info no" type="submit">No</button>
+          </div>
+          <div class="text-right">
+            <button class="btn btn-info check-out" type="submit">Checkout</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contact">
+        <div class="reachUs">
+          <h2>WE VALUE YOUR FEEDBACK</h2>
+          <form action="https://formspree.io/f/mvoldnbp" method="post">
+            <label for="name"></label>
+            <input class="name" type="text" name="name" placeholder="Name..." required />
+            <label for="email"></label>
+            <input class="email" type="email" name="email" placeholder="Email..." required /> <br />
+            <br />
+            <label for="textarea"></label>
+            <textarea name="text" id="" cols="50" rows="5" placeholder="Your message here..."></textarea><br />
+            <input class="submit" type="submit" value="Submit" />
+          </form>
+          <div class="rating-css">
+            <div class="star-icon">
+              <p>Rate our services</p>
+              <br />
+              <input type="radio" name="rating1" id="rating1" />
+              <label for="rating1" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating2" />
+              <label for="rating2" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating3" />
+              <label for="rating3" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating4" />
+              <label for="rating4" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating5" />
+              <label for="rating5" class="fa fa-star"></label>
+            </div>
+          </div>
+	  <p>We are located at:Brave estate, Sultan Plaza</p>
+	  <p>Lagos Nigeria</p>
+	  <p>
+	  call: +234 803 3000 100 <br />
+	  or <br />
+	  EMAIL: Riddy@Pizza.com
+	  </p>
+	  </div>
+      </section>
+
+      <footer>
+	      <p>&copy; 2023 by Sultan</p>
+	      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
