@@ -22,7 +22,8 @@ JQUERY
 
 # License
 License: MIT Copyright (c) 2023 Akinola Sultan.
-#Link to Live Site:https://sultanakinola.github.io/Riddy_Pizza/
 
-#support and contact 
+# Link to Live Site:https://sultanakinola.github.io/Riddy_Pizza/
+
+# support and contact 
 You can provide feedback or raise any issues/ bugs through my email address at sultanakinola9@gmail.com If you'd like to request a new function, feel free to do so by opening an issue here. Include sample queries and their corresponding results.
